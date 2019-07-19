@@ -1,0 +1,251 @@
+a{
+    cursor: pointer;
+}
+a:hover{
+    cursor: pointer;
+}
+
+
+.header{
+    margin-top: 0px;
+    background-image: url("header.jpg");
+}
+.bg-color-white{
+    background: #ffffff;
+}
+.navbar{
+background: #054e9d;
+border-radius: 0px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    background: rgb(245, 147, 77);
+}
+#body_div {
+    top: 0;
+    position: relative;
+
+} 
+.banner{
+border-bottom: solid 5px #2c3e50;
+}
+    .mysocial{
+        display: -webkit-inline-box;
+    }
+    .bg-color-sky-light{margin-top: 5px;}
+    
+    .bottom {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    
+        line-height: 1.4;
+    }
+    .header_top{
+        background: whitesmoke;
+                border-bottom: 1px solid #cfd4de;
+                height: 45px;
+    }
+    /* right header */
+    .right_header{
+    margin-top: 5px;
+    }
+    /*admission button start*/
+    .btn-admission{
+        background: #054e9d;
+        border: 0px;
+        border-radius: 30px;
+        color: #fff;
+        float:right;
+        margin: 5px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 4px;
+        height: 25px;
+      
+        cursor: pointer; 
+    }
+   .btn-admission:hover{
+        background: rgb(245, 147, 77);
+        border: 0px;
+        float:right;
+        border-radius: 30px;
+        color: #fff;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 4px;
+        height: 25px;
+        cursor: pointer;
+        
+    }
+    /*admission button end*/
+      /*heading */
+      .main-head{
+        line-height: 70px;
+        color: #054e9d;
+        margin-top: 0px;
+        font-family: sans-serif;
+    }
+    
+    /*heading end*/
+    /* footer */
+    .footer{
+        background: rgb(6, 15, 36);
+      
+    }
+/* Admission Button */
+.AdEnquiry {
+    background-color: #054e9d;
+    font-weight: bold;
+    z-index: 999;
+    position: fixed;
+    right: -60px;
+    top: 55%;
+}
+.AdEnquiry:hover{
+    background-color: rgb(245, 147, 77);
+}
+.rotate {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+/* Admission Button end */
+.scrollToTop {
+    margin: 0 30px 20px 0;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #054e9d;
+    padding: 14px;
+    color: #ffffff;
+    display: none;
+  }
+  
+  .scrollToTop:hover {
+    text-decoration: none;
+  }
+  
+      
+    .bottom{
+    background: rgb(6, 15, 36);
+    height: 50px;
+}
+         .intro-text.type1:before {
+                border-left: 13px solid transparent;
+                border-right: 13px solid transparent;
+                border-top: 13px solid #2c3e50;
+                content: "";
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                bottom: -12px;
+                width: 0;
+            } 
+            .head{
+                text-align: center;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.699);
+                font-family: sans-serif;
+                /* border-bottom: 2px dashed #2c3e50; */
+            }
+            .desc{
+                text-align: justify;
+                font-family: sans-serif;
+                font-size: 16px;
+                padding: 5px;
+                margin: 15px;
+                color: rgba(0, 0, 0, 0.699);
+            }
+            span{
+                color: #2c3e50;
+                font-size: 16px;
+            }
+            /* login button */
+            .btn-submit{
+            background: #054e9d;
+            border: 0px;
+            border-radius: 30px;
+            color: #fff;
+            margin: 5px;
+            padding-bottom: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+            height: 25px;
+          
+            cursor: pointer; 
+        }
+       .btn-submit:hover{
+            background: rgb(245, 147, 77);
+            border: 0px;
+         
+            border-radius: 30px;
+            color: #fff;
+            padding-bottom: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+            height: 25px;
+            cursor: pointer;
+        }
+        .modal-content{
+            border-radius: 2px;
+        }
+        marquee{
+            border-bottom: 1px dashed #2c3e50;
+        }
+        .form-control {
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #121b35;
+    background: #e6e5e5;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding-left: 15px;
+}
+  
+      
+            /* login button */
+            .btn-submit{
+            background: #054e9d;
+            border: 0px;
+            border-radius: 30px;
+            color: #fff;
+            margin: 5px;
+            padding-bottom: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+            height: 25px;
+            cursor: pointer; 
+        }
+       .btn-submit:hover{
+            background: rgb(245, 147, 77);
+            border: 0px;
+         
+            border-radius: 30px;
+            color: #fff;
+            padding-bottom: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+            height: 25px;
+            cursor: pointer;
+        }
+        
+        
+  
+        
