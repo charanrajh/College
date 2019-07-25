@@ -22,10 +22,10 @@
            
                     <form action="LoginServlet" method="post" id="loginform" onSubmit="return validateForm();">
                         <div class="form-group">
-                          <input type="text" class="form-control" id="id" placeholder="Enter Id" name="id" >
+                          <input type="text" class="form-control" id="id" placeholder="Enter Id" name="id" required>
                         </div>
                         <div class="form-group">
-                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" >
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
                         </div>
                         <button type="submit" class="btn-submit" >Submit</button>
                       </form>

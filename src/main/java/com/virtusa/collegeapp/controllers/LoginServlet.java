@@ -9,12 +9,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 import com.virtusa.collegeapp.dao.implementation.LoginImpl;
 import com.virtusa.collegeapp.dao.interfaces.LoginDao;
 
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	private HttpSession session = null;
+	
+	private static Logger logger=Logger.getLogger(LoginServlet.class);
+    static {
+    	PropertyConfigurator.configure("log4j.properties");
+    	
+    }
+	
 	public LoginServlet() {
 		super();
 	}
@@ -29,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 		String id = request.getParameter("id");
 		String password = request.getParameter("pwd");
 		try {
-			HttpSession session = request.getSession();
+			session = request.getSession();
 			String type="";
 			if(user.checkCredentials(id, password))
 			{
@@ -77,11 +87,14 @@ public class LoginServlet extends HttpServlet {
 		}
 		catch(NullPointerException e) {
 			System.out.println(e.getMessage());
+			logger.error("NullPointer Exception"+e.getMessage());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			System.out.println(e.getMessage());
+			//System.out.println(e.getMessage());
+			session.setAttribute("error",e.getMessage());
+			response.sendRedirect("error.jsp");
+			logger.error("SQL Exception"+e.getMessage());
+			//System.getProperty("java.class.path");
 		}
 	}
-
-
 }

@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import org.apache.log4j.Logger;
+
 import com.virtusa.collegeapp.dao.interfaces.FacultyDao;
 import com.virtusa.collegeapp.helpers.MySQLHelper;
 import com.virtusa.collegeapp.model.Faculty;
@@ -27,6 +29,8 @@ public class FacultyImpl implements FacultyDao{
 	private List<Faculty> allfaculties;
 	public static String id;
 
+	private static Logger logger = Logger.getLogger(StudentImpl.class);
+	
 	@Override
 	public Faculty getFacultyDetailsById(String facultyId) throws SQLException {
 		// TODO Auto-generated method stub
@@ -60,7 +64,7 @@ public class FacultyImpl implements FacultyDao{
 		}
 		catch(SQLException e) 
 		{
-			System.out.println(e.getMessage());
+			logger.error("SQL Exception : ", e);
 		}
 		finally
 		{

@@ -29,7 +29,7 @@ public class LoginTest {
 		boolean loginStatus=false;
 		boolean thrown=false;
 		try {
-			loginStatus = logindao.checkCredentials("1234", "qwerty");
+			loginStatus = logindao.checkCredentials("1234", "qwer");
 		} catch (SQLException e) {
 			thrown=true;
 		}
@@ -43,7 +43,7 @@ public class LoginTest {
 		boolean thrown=false;
 		String role="";
 		try {
-			role = logindao.checkLogin("1234", "qwerty");
+			role = logindao.checkLogin("1234", "qwer");
 		} catch (SQLException e) {
 			thrown=true;
 		}

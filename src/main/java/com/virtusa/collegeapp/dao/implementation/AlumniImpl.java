@@ -39,11 +39,11 @@ public class AlumniImpl implements AlumniDao {
 			pre.setString(2, alumni.getPassword());
 			pre.setString(3, "alumni");
 			pre.execute();
-			System.out.println("alumni trigger");
+			//System.out.println("alumni trigger");
 			if(queryExecStatus>0)
 				alumniStatus = true;
 		} catch (SQLException e) {
-			System.out.println(e.getMessage());
+			//System.out.println(e.getMessage());
 		}finally {
 			conn.close();
 		}

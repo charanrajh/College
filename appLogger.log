@@ -1,0 +1,5 @@
+2019-07-23 14:50:09,054[main] INFO  com.virtusa.collegeapp.dao.implementation.StudentImpl  - logger working
+2019-07-23 14:53:45,815[main] INFO  com.virtusa.collegeapp.dao.implementation.StudentImpl  - logger working
+2019-07-23 14:59:31,706[main] INFO  com.virtusa.collegeapp.dao.implementation.LoginImpl  - login logger working
+2019-07-23 15:00:51,620[main] INFO  com.virtusa.collegeapp.dao.implementation.LoginImpl  - login logger working
+2019-07-24 13:11:01,326[main] ERROR com.virtusa.collegeapp.dao.implementation.LoginImpl  - NullPointer ExceptionIllegal operation on empty result set.

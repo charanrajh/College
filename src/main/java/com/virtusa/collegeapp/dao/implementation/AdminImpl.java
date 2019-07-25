@@ -78,6 +78,4 @@ public class AdminImpl implements AdminDao{
 		}
 		return status;
 	}
-
-
 }

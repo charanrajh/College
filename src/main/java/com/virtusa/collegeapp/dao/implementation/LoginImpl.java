@@ -5,6 +5,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+import com.virtusa.collegeapp.controllers.LoginServlet;
 import com.virtusa.collegeapp.dao.interfaces.LoginDao;
 import com.virtusa.collegeapp.helpers.MySQLHelper;
 
@@ -15,7 +19,12 @@ public class LoginImpl implements LoginDao{
 	private ResultSet rs;
 	private String type = null;
 	public static String id = null;
-
+	
+	private static Logger logger = Logger.getLogger(LoginImpl.class);
+	static {
+		PropertyConfigurator.configure("log4j.properties");
+	}
+	
 	@Override
 	public String checkLogin(String id, String password) throws SQLException {
 		/* This method returns the type of the user from the login table */
@@ -32,7 +41,7 @@ public class LoginImpl implements LoginDao{
 		}
 		catch(Exception e)
 		{
-			System.out.println(e.getMessage());
+			logger.error("NullPointer Exception"+e.getMessage());
 		}finally {
 			conn.close();
 		}
@@ -56,7 +65,8 @@ public class LoginImpl implements LoginDao{
 		}
 		catch(Exception e)
 		{
-			System.out.println("invalid credentials:"+e.getMessage());
+//			System.out.println("invalid credentials:"+e.getMessage());
+			logger.info("Invalid credentials");
 		}
 		finally
 		{
